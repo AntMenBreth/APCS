@@ -17,7 +17,7 @@ public class AnthonyMendezWeatherAnalysis {
         //Calculates Average Temp
         double avgfin = temp(dayz, days);
         //Calculates how many days were above average
-        int abvav = AboveAverage(dayz, avgfin);
+        int abvav = aboveaverage(dayz, avgfin);
         //Print Statements: 1-Prints Average Temp   2-Prints # of days above average
         System.out.println("Average temp = " + f.format(avgfin));
         System.out.println(abvav + " days were above average.");
@@ -32,7 +32,7 @@ public class AnthonyMendezWeatherAnalysis {
         return avgfin;
 
     }
-    public static int AboveAverage(int[] dayz, double avgfin) {
+    public static int aboveaverage(int[] dayz, double avgfin) {
         //Code for Calculating how many days above average
         int abvav = 0;
         for (int i = 0; i < dayz.length; i++) {
